@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wordinator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <audio src="enwordxentric.wav" id="music"></audio>
+
+    <a href="/index.html" class="abakafun">Abaka.fun</a>
+    <div class="container">
+        <h1 class="title">The Wordinator</h1>
+        Insert root word: <input type="text" id="root"><br>
+        Insert suffix (optional): <input type="text" id="suf"><br>
+        Insert prefix (optional): <input type="text" id="pre"><br>
+        Insert syntactic category: <select name="syntactic category" id="sc">
+            <option value="Adjective">Adjective</option>
+            <option value="Adposition">Adposition</option>
+            <option value="Adverb">Adverb</option>
+            <option value="Coordinate Conjunction">Coordinate Conjunction</option>
+            <option value="Determiner">Determiner</option>
+            <option value="Interjection">Interjection</option>
+            <option value="Noun">Noun</option>
+            <option value="Particle">Particle</option>
+            <option value="Pronoun">Pronoun</option>
+            <option value="Subordinate Conjunction">Subordinate Conjunction</option>
+            <option value="Verb">Verb</option>
+        </select><br>
+        Insert definition: <input type="text" id="def"><br>
+        <button class="generate" id="generate" onclick="generateWord()">Generate random word</button>
+        <hr><br>
+        result:
+        <div class="result">
+            <p id="result" class="word">Your Word Here</p>
+            <p id="definition" class="def">Your Definition Here</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
