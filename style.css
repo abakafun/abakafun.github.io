@@ -5,6 +5,7 @@ body {
 .main {
     margin: 10%;
     margin-top: 5%;
+    flex-basis: 40%;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
 }
@@ -12,19 +13,17 @@ body {
 .games {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
     justify-content: center;
 }
 
 .games a {
     display: flex;
     text-decoration: none;
-    flex: 1 1 25%;
+    flex: 1 1 50%;
 }
 
 .item {
-    flex: 1 1 25%;
+    flex: 1 1 50%;
     margin: 25px;
     padding: 10px;
     text-align: center;
@@ -73,6 +72,18 @@ body {
     animation: jitter 0.1s linear infinite;
 }
 
+.datruth {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: -50px;
+    transform: translateX(0);
+}
+.datruth:hover {
+    animation: bounce 1s linear infinite;
+}
+
 @keyframes jitter {
     0% {
         transform: translateX(-5px);
@@ -85,8 +96,41 @@ body {
     }
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .neverending {
     background-image: url("The\ Neverending.png");
+    background-size: cover;
+    background-position-y: -20px;
+    flex: 1 1 25%;
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 200px;
+    border-radius: 25px;
+    border-width: 0;
+    background-position-x: center;
+}
+
+.thewordinator {
+    background-image: url(thewordinator.png);
     background-size: cover;
     background-position-y: -20px;
     flex: 1 1 25%;
