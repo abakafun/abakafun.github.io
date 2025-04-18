@@ -3,7 +3,7 @@ var fill = document.getElementById('fill');
 var upgradetxt = document.getElementById('upgradetxt');
 var filltxt = document.getElementById('filltxt');
 var rebirthBtn = document.getElementById('rebirth');
-let rebirthMul = loadMultiplayer();
+let rebirthMul = 1;
 var pounds = 0;
 var upgrade = 20;
 var fillcolor = false;
@@ -50,7 +50,6 @@ function rebirth() {
         if (fart != true) {
             level = 1;
             rebirthMul *= 2;
-		localStorage.setItem('rebirthMul', rebirthMul);
             document.getElementById("2").style.filter = "grayscale(1)";
             document.getElementById("3").style.filter = "grayscale(1)";
             document.getElementById("4").style.filter = "grayscale(1)";
@@ -144,7 +143,3 @@ function initializeAudio() {
 document.addEventListener("DOMContentLoaded", function() {
     initializeAudio()
 });
-
-function loadMultiplayer() {
-	let saved = localStorage.getItem('rebirthMul');
-	return saved ? parseFloat(saved) : 1;
