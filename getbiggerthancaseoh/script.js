@@ -50,7 +50,7 @@ function rebirth() {
         if (fart != true) {
             level = 1;
             rebirthMul *= 2;
-			localStorage.setItem('rebirthMul', rebirthMul);
+		localStorage.setItem('rebirthMul', rebirthMul);
             document.getElementById("2").style.filter = "grayscale(1)";
             document.getElementById("3").style.filter = "grayscale(1)";
             document.getElementById("4").style.filter = "grayscale(1)";
@@ -146,5 +146,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function loadMultiplayer() {
-		 let saved = localStorage.getItem('rebirthMul');
-		 return saved ? parseFloat(saved) : 1;
+	let saved = localStorage.getItem('rebirthMul');
+	return saved ? parseFloat(saved) : 1;
