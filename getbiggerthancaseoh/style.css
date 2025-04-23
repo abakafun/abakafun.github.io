@@ -60,11 +60,19 @@ body {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFw5UEquyq6RBIUcwEk9o_nBVc_imX1qQJKA&s');
 }
 
+.quarterpounder:hover {
+    background-color: #c4c4c4;
+}
+
 .bigmac {
     background-size: 40%;
     transform: translateY(-5%);
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2VADSqDjZxf_mkI36-SOo-s5aT6Hs89Syg&s');
     filter: grayscale(1);
+}
+
+.bigmac:hover {
+    background-color: #c4c4c4;
 }
 
 .donut {
@@ -74,10 +82,18 @@ body {
     filter: grayscale(1);
 }
 
+.donut:hover {
+    background-color: #c4c4c4;
+}
+
 .pizza {
     background-size: 50%;
     background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNF9zbGljZV9vZl9waXp6YWlzb2xhdGVkX29uX3doaXRlX2JhY2tncm91bmRfZTYzNzg2MmUtMjFmMC00ZjZhLTg2YWItYzg3MzEzOTVkZjNlXzEuanBn.jpg');
     filter: grayscale(1);
+}
+
+.pizza:hover {
+    background-color: #c4c4c4;
 }
 
 .progressbar {
